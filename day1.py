@@ -1,7 +1,7 @@
 #coding: utf-8
 
-def findDuplicateFrequency(lines):  
-    frequencies_seen = set()
+def find_duplicate_frequency(lines):  
+    frequencies_seen = {0}
     total = 0
     #Keep looping through the lines in the file until you find a duplicate frequency
     while True:
@@ -15,5 +15,5 @@ def findDuplicateFrequency(lines):
 
 file_object = open("input_day_1.txt", "r")
 lines = file_object.readlines()
-print(findDuplicateFrequency(lines))
+print(find_duplicate_frequency(lines))
 file_object.close()
